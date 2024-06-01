@@ -331,10 +331,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
          Contact Page CSS Start
   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-         Contact Form CSS
-  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
   .contact-section{
     min-height: calc(100vh - 140px);
   }
@@ -388,15 +384,58 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     font-size: 25px;
   }
 
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         Contact Page CSS End
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         FAQ Page CSS Start
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 FAQ CSS 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
+.faq-section{
+  background-color: var(--secondary-bg-color);
+  min-height: calc(100vh - 140px);
+}
+.faq-section .faq-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: var(--dark-secondary-bg-color);
+  color: var(--dark-primary-color);
+}
+.faq-section .faq-title span{
+  transition: .4s;
+}
+.faq-section .faq-desc{
+  background-color: var(--primary-bg-color);
+  color: var(--text-secondary-color);
+  padding: 5px 15px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+}
 
+.faq-desc-active{
+  padding: 15px 15px !important;
+  height: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.angle-active{
+  transform: rotate(180deg);
+}
 
 
 
   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-         Contact Page CSS End
+         FAQ Page CSS End
   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
