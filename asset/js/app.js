@@ -25,6 +25,19 @@ document.addEventListener('click', function(event) {
   }
 });
 
+var submit_btn = document.querySelector('.input-button');
+submit_btn.addEventListener('click', function(){
+  var alert_message = document.querySelector('.submit-message');
+  alert_message.classList.add('submit-active');
+});
+
+window.setInterval(removeAlert, 5000);
+
+function removeAlert(){
+  var alert_message = document.querySelector('.submit-message');
+  alert_message.classList.remove('submit-active');
+}
+
 
 
 

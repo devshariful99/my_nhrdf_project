@@ -421,6 +421,19 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     font-size: 25px;
   }
 
+  .submit-message {
+    position: sticky;
+    left: 100%;
+    top: -60px;
+    z-index: 99999999999999999999999999;
+    transition: .4s;
+    display: none;
+}
+  .submit-active{
+    top: 10px;
+    display: inline-block;
+  }
+
   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
          Contact Page CSS End
   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
