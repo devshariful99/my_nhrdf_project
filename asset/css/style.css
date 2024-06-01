@@ -47,4 +47,88 @@ body{
 }
 
 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxx
+        Header CSS 
+ xxxxxxxxxxxxxxxxxxxxxxxxxx*/
+ .header-section{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+ }
+ .header-section .logo_wrap img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+  }
+ .header-section .menu_bar .menu{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .header-section .menu_bar .menu li a{
+    color: var(--primary-color);
+    display: inline;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s;
+ }
+ .header-section .menu_bar .menu li a:hover{
+    color:  var(--hover-color);
+ }
 
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+           Clock CSS  
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+#div1{
+  display: flex;
+  flex-direction: column!important;
+  line-height: 17px;
+  justify-content: center;
+}
+
+#div1 p{
+  display: inline-block;
+}
+
+  
+#time {
+  font-size: 16px;
+  text-align: center;
+}
+
+#date {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Banner CSS  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+  .banner-section{
+    height: calc(100vh - 80px);
+  }
+  .banner-section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         Footer CSS  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+  footer .socket{
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--dark-secondary-bg-color);
+    text-align: center;
+    color: var(--dark-primary-color);
+  }
