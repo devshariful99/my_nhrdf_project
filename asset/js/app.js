@@ -14,17 +14,17 @@ function ut() {
 }
 
 document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('faq-title') || event.target.classList.contains('title') ) {
+  if (event.target.classList.contains('faq-title') ) {
 
-    if(event.target.querySelector('span').classList.contains('angle-active')){
-      event.target.querySelector('span').classList.remove('angle-active');
+    if(event.target.querySelector('.faq-icon').classList.contains('angle-active')){
+      event.target.querySelector('.faq-icon').classList.remove('angle-active');
 
       var nextDesc = event.target.nextElementSibling;
       if (nextDesc && nextDesc.classList.contains('faq-desc')) {
         nextDesc.classList.remove('faq-desc-active');
       }
     }else{
-      document.querySelectorAll('span.angle-active').forEach(function(span) {
+      document.querySelectorAll('.faq-icon.angle-active').forEach(function(span) {
         span.classList.remove('angle-active');
       });
   
@@ -32,7 +32,7 @@ document.addEventListener('click', function(event) {
         desc.classList.remove('faq-desc-active');
       });
   
-      event.target.querySelector('span').classList.add('angle-active');
+      event.target.querySelector('.faq-icon').classList.add('angle-active');
   
       var nextDesc = event.target.nextElementSibling;
       if (nextDesc && nextDesc.classList.contains('faq-desc')) {
