@@ -458,6 +458,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
   padding: 15px 15px;
   background-color: var(--dark-secondary-bg-color);
   color: var(--dark-primary-color);
+  cursor: pointer;
 }
 .faq-section .faq-title span{
   transition: .4s;

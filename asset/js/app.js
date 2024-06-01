@@ -15,21 +15,32 @@ function ut() {
 
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('faq-title') || event.target.classList.contains('title') ) {
+
+    if(event.target.querySelector('span').classList.contains('angle-active')){
+      event.target.querySelector('span').classList.remove('angle-active');
+
+      var nextDesc = event.target.nextElementSibling;
+      if (nextDesc && nextDesc.classList.contains('faq-desc')) {
+        nextDesc.classList.remove('faq-desc-active');
+      }
+    }else{
+      document.querySelectorAll('span.angle-active').forEach(function(span) {
+        span.classList.remove('angle-active');
+      });
   
-    document.querySelectorAll('span.angle-active').forEach(function(span) {
-      span.classList.remove('angle-active');
-    });
-
-    document.querySelectorAll('.faq-desc').forEach(function(desc) {
-      desc.classList.remove('faq-desc-active');
-    });
-
-    event.target.querySelector('span').classList.add('angle-active');
-
-    var nextDesc = event.target.nextElementSibling;
-    if (nextDesc && nextDesc.classList.contains('faq-desc')) {
-      nextDesc.classList.add('faq-desc-active');
+      document.querySelectorAll('.faq-desc').forEach(function(desc) {
+        desc.classList.remove('faq-desc-active');
+      });
+  
+      event.target.querySelector('span').classList.add('angle-active');
+  
+      var nextDesc = event.target.nextElementSibling;
+      if (nextDesc && nextDesc.classList.contains('faq-desc')) {
+        nextDesc.classList.add('faq-desc-active');
+      }
     }
+  
+    
   }
 });
 
