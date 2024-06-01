@@ -54,7 +54,9 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 }
-
+.uk-slidenav:hover{
+  color: var(--primary-color) !important;
+}
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxx
         Header CSS 
@@ -182,6 +184,62 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     border: 1px solid var(--btn-hover-border-color);
     background-color: var(--btn-hover-bg-color);
 
+  }
+
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Customers Feedback  
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+  .feedback-section{
+    background-color: var(--secondary-bg-color);
+  }
+  .feedback-section .feedback{
+    border: 3px solid var(--border2-color);
+    border-radius: 10px;
+    padding: 20px 20px;
+    position: relative;
+  }
+  .feedback-section .feedback .left-top-icon,.feedback-section .feedback .right-bottom-icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 50%;
+    line-height: 50px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  .feedback-section .feedback .left-top-icon{
+    
+    left: -15px;
+    top: -15px;
+  }
+  .feedback-section .feedback .right-bottom-icon{
+    right: -15px;
+    bottom: -15px;
+  }
+  .feedback-section .feedback .desc p{
+    color: var(--text-secondary-color);
+    text-align: center;
+  }
+  .feedback-section .feedback .author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  .feedback-section .feedback .author .image img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .feedback-section .feedback .author .name h3{
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
   }
 
 
