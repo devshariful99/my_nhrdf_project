@@ -266,6 +266,43 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        Breadcrumb Css Start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.breadcrumb-section{
+  height: 180px;
+  width: 100%;
+  position: relative;
+}
+.breadcrumb-section img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.breadcrumb-section::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: .5;
+}
+.breadcrumb-section .page-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--dark-primary-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  z-index: 9999;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         About Page Css Start
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
@@ -437,29 +474,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
          FAQ Page CSS End
   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxx
