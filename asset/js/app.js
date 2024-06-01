@@ -2,7 +2,15 @@ window.setInterval(ut, 1000);
 function ut() {
   var d = new Date();
   document.getElementById("time").innerHTML = d.toLocaleTimeString();
-  document.getElementById("date").innerHTML = d.toLocaleDateString();
+  
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const month = months[d.getMonth()];
+
+  const day = d.getDate();
+  const year = d.getFullYear();
+
+  document.getElementById("date").innerHTML = day+'-'+month+'-'+year;
+
 }
 
 document.addEventListener('click', function(event) {
